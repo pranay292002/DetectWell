@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.DetectWell.Appllication.ui.home.HomeFragment"
+        android:label="Detectwell"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_skinCancer"
+            app:destination="@id/nav_skinCancer" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_diabetes"
+            app:destination="@id/nav_diabetes" />
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_heartDisease"
+            app:destination="@id/nav_heartDisease" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_parkinson"
+            app:destination="@id/nav_parkinson" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_skinCancer"
+        android:name="com.DetectWell.Appllication.ui.skinCancer.SkinCancer"
+        android:label="Skin Cancer Detection"
+        tools:layout="@layout/fragment_skin_cancer" >
+        <action
+            android:id="@+id/action_nav_skinCancer_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_diabetes"
+        android:name="com.DetectWell.Appllication.ui.diabetes.Diabetes"
+        android:label="Diabetes Detection"
+        tools:layout="@layout/fragment_diabetes" >
+        <action
+            android:id="@+id/action_nav_diabetes_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_heartDisease"
+        android:name="com.DetectWell.Appllication.ui.heartDisease.HeartDisease"
+        android:label="Heart Disease Detection"
+        tools:layout="@layout/fragment_heart_disease" >
+        <action
+            android:id="@+id/action_nav_heartDisease_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_parkinson"
+        android:name="com.DetectWell.Appllication.ui.parkinson.Parkinson"
+        android:label="Parkinson's Disease Detection"
+        tools:layout="@layout/fragment_parkinson" >
+        <action
+            android:id="@+id/action_nav_parkinson_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_aboutUs"
+        android:name="com.DetectWell.Appllication.ui.aboutUs.AboutUs"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us" >
+        <action
+            android:id="@+id/action_nav_aboutUs_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_contactUs"
+        android:name="com.DetectWell.Appllication.ui.contactUs.ContactUs"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact_us" >
+        <action
+            android:id="@+id/action_nav_contactUs_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+</navigation>

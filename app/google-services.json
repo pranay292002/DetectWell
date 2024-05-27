@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "722990497027",
+    "project_id": "detectwell-b02dd",
+    "storage_bucket": "detectwell-b02dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722990497027:android:fa0805d4d9ae795cbe7d36",
+        "android_client_info": {
+          "package_name": "com.DetectWell.Appllication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6TWcFrjYT3vMTiJ30YZaU8ian8kd_eGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

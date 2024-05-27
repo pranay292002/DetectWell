@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp1">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_skinCancer"
+            android:icon="@drawable/baseline_local_hospital_24"
+            android:title="Skin Cancer" />
+        <item
+            android:id="@+id/nav_diabetes"
+            android:icon="@drawable/baseline_local_hospital_24"
+            android:title="Diabetes" />
+        <item
+            android:id="@+id/nav_heartDisease"
+            android:icon="@drawable/baseline_local_hospital_24"
+            android:title="Heart Disease" />
+        <item
+            android:id="@+id/nav_parkinson"
+            android:icon="@drawable/baseline_local_hospital_24"
+            android:title="Parkinson's Disease" />
+
+    </group>
+    <group android:checkableBehavior="none"
+        android:id="@+id/grp2">
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:icon="@drawable/detectwell_logo"
+            android:title="AboutUs" />
+        <item
+            android:id="@+id/nav_contactUs"
+            android:icon="@drawable/baseline_email_24"
+            android:title="ContactUs" />
+
+    </group>
+    <group android:checkableBehavior="none"
+        android:id="@+id/grp3">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/baseline_logout_24"
+            android:title="Logout" />
+    </group>
+</menu>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.parkinson.Parkinson">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="30dp"
+        android:paddingHorizontal="20dp"
+
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/edit_mdvp_fo"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:hint="Fundamental frequency in Hertz"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp"
+            >
+
+        </EditText>
+        <EditText
+            android:id="@+id/edit_mdvp_fhi"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:hint="Highest fundamental frequency in Hertz"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_mdvp_flo"
+            android:hint="Lowest fundamental frequency in Hertz"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_mdvp_jitter"
+            android:hint="MDVP:Jitter(%) - Percentage of jitter"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_mdvp_jitter_abs"
+            android:hint="Absolute value of jitter"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_mdvp_rap"
+            android:hint="Relative average perturbation"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_mdvp_ppq"
+            android:hint="Five-point period perturbation quotient"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_jitter_ddp"
+            android:hint="Avg absolute diff of diff btwn jitter cycles"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_mdvp_shimmer"
+            android:hint="MDVP:Shimmer - Shimmer value"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_mdvp_shimmer_db"
+            android:hint="Shimmer in dB"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_shimmer_apq3"
+            android:hint="Shimmer:APQ3"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_shimmer_apq5"
+            android:hint="Shimmer:APQ5"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_mdvp_apq"
+            android:hint="MDVP: Amplitude perturbation quotient"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_shimmer_dda"
+            android:hint="Shimmer: DDA"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_nhr"
+            android:hint="NHR - Noise to harmonic ratio"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_hnr"
+            android:hint="HNR - Harmonic to noise ratio"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_rpde"
+            android:hint="RPDE - Recurrence period density entropy"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_dfa"
+            android:hint="DFA - Detrended fluctuation analysis"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_spread1"
+            android:hint="Spread1 "
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_spread2"
+            android:hint="Spread2 "
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_d2"
+            android:hint="D2:Nonlinear dynamical complexity measure"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_ppe"
+            android:hint="PPE - Pitch period entropy"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp">
+
+        </EditText>
+
+
+        <Button
+            android:id="@+id/parkinson_btn_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:drawableLeft="@drawable/baseline_assignment_24"
+            android:text="Get Results">
+
+        </Button>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar_parkinson"
+            android:layout_gravity="center">
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/parkinson_result_text"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="Your Results Will Be Displayed here"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

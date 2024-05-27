@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.heartDisease.HeartDisease">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="30dp"
+        android:paddingHorizontal="20dp"
+
+        android:gravity="center_horizontal">
+
+
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:hint="Age"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupSex"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radioButtonMale">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Gender:"
+                android:textSize="15sp">
+
+            </TextView>
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextRestingBP"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+
+            android:inputType="number"
+            android:hint="Resting Blood Pressure (mm Hg)"/>
+
+        <EditText
+            android:id="@+id/editTextCholesterol"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:hint="Serum Cholesterol (mg/dL)"/>
+
+        <EditText
+            android:id="@+id/editTextMaxHeartRate"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:hint="Maximum Heart Rate (bpm)"/>
+
+        <EditText
+            android:id="@+id/editTextSTDepression"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:hint="ST Depression (e.g. 1.5)"/>
+
+        <EditText
+            android:id="@+id/editTextMajorVessels"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:hint="Number of Colored Vessels (e.g. 2)"/>
+
+
+        <CheckBox
+            android:id="@+id/checkBoxExerciseAngina"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:text="Exercise Induced Angina (check if yes)"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxFastingBloodSugar"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:text="Fasting Blood Sugar (> 120 mg/dL)"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Chest Pain Type:"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupChestPain"
+            android:layout_width="300dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="10dp"
+            android:checkedButton="@+id/radioButtonCP2"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonCP1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Typical Angina" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atypical Angina" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-anginal Pain" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCP4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asymptomatic" />
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Resting Electrocardiographic Results:"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupRestingECG"
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:checkedButton="@+id/radioButtonECG2"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonECG1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonECG2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Having ST-T wave abnormality"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonECG3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Showing probable or definite left ventricular hypertrophy"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Slope of the Peak Exercise ST Segment:"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupSTSegment"
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:checkedButton="@+id/radioButtonSTSegment1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonSTSegment1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upsloping"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonSTSegment2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flat"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonSTSegment3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Downsloping"/>
+        </RadioGroup>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Thalassemia:"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupThalassemia"
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:checkedButton="@+id/radioButtonThalassemia2"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonThalassemia1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonThalassemia2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fixed Defect"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonThalassemia3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reversible Defect"/>
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/heart_btn_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:drawableLeft="@drawable/baseline_assignment_24"
+            android:text="Get Results">
+
+        </Button>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar_heart"
+            android:layout_gravity="center">
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/heart_result_text"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="Your Results Will Be Displayed here"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+        </TextView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
